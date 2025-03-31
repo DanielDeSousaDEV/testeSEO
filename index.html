@@ -10,24 +10,26 @@
     <title>Teste Woolly Front-end Jr.</title>
     
     <link rel="icon" type="image/png" href="./assets/images/icon.png">
-    <link rel="apple-touch-icon" href="./assets/images/logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <link rel="stylesheet" href="./assets/css/tailwind_output.css">
     
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+     
     
     <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
     />
     <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css"
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css"
     />
     
     <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js"></script>
@@ -37,10 +39,10 @@
 <body class="bg-[var(--light-gray)]">
 
     <main>
-        <section class="h-dvh bg-right-top sm:bg-top md:bg-left-top bg-no-repeat bg-[var(--gray)] bg-[url('./assets/images/casa_em_construcao.webp')] bg-[300%_auto] sm:bg-[200%_auto] md:bg-[170%_auto] lg:bg-[140%_auto] relative">
-            <div class="absolute bg-[var(--yellow)] bg-no-repeat md:max-w-[450px] top-0 md:left-[50%] md:-translate-x-[50%] lg:-translate-x-[0] lg:left-30 p-8 md:p-18 rounded-b-lg">
+        <section class="h-dvh bg-[var(--gray)] bg-right-top sm:bg-top md:bg-left-top bg-no-repeat bg-[url('/assets/images/casa_em_construcao.webp')] bg-[300%_auto] sm:bg-[200%_auto] md:bg-[170%_auto] lg:bg-[140%_auto] relative">
+            <div class="absolute bg-[var(--yellow)] md:max-w-[450px] top-0 md:left-[50%] md:-translate-x-[50%] lg:-translate-x-[0] lg:left-30 p-8 md:p-18 rounded-b-lg">
 
-                <img class="w-50 md:w-60 mb-10" src="./assets/images/logo.webp" alt="logo com brasão da empresa">
+                <img class="w-50 md:w-60 mb-10" src="/assets/images/logo.webp" alt="logo com brasão da empresa">
                 <h1 class="text-[var(--blue)] text-3xl md:text-4xl font-bold mb-4">
                     Lorem ipsum 
                     dolor sit amet, 
@@ -54,13 +56,13 @@
 
         <section class="bg-[var(--yellow)] flex justify-center items-center p-8">
                 <div class="flex flex-col lg:flex-row max-w-4xl justify-center items-center lg:items-start py-12 lg:py-24 gap-8 lg:gap-4 lg:gap-20">
-                    <img loading="lazy" class="size-60 md:size-80 object-cover bg-[var(--gray)] object-[-15%] border border-2 border-white rounded-lg shadow-[var(--shadow)]" src="./assets/images/casa_visao_lateral.webp" alt="Imagem lateral de uma casa">
+                    <img loading="lazy" class="size-60 md:size-80 object-cover bg-[var(--gray)] object-[-15%] border-2 border-white rounded-lg shadow-[var(--shadow)]" src="/assets/images/casa_visao_lateral.webp" alt="Imagem lateral de uma casa">
                     <p class="w-fit md:pt-6 text-[var(--brown)] md:text-xl text-center md:text-start">Cras sed <strong>neque ultrices</strong>, tincidunt lacus sit amet, aliquet libero. Pellentesque malesuada <strong>neque vel nisl</strong> aliquet, eget sodales ipsum iaculis. Curabitur efficitur purus sed turpis placerat, sit amet laoreet turpis tincidunt.                </p>
                 </div>
             </div>
         </section>
 
-        <section class="py-24 lg:py-30 bg-[var(--blue)] flex flex-col items-center justify-center">
+        <section class="bg-[var(--blue)] flex flex-col items-center justify-center py-24 lg:py-30">
             <div class="flex flex-col items-center justify-center gap-10 p-4">
                 <div class="text-center">
                     <h2 class="text-2xl md:text-3xl max-w-3xl font-semibold text-[var(--yellow)] mb-3">Vestibulum fringilla, odio at commodo aliquet, diam enim hendrerit diam</h2>
@@ -71,53 +73,95 @@
                     </p>
                 </div>
                 
-                <!-- <iframe class="rounded-lg border border-2 overflow-hidden w-full aspect-video" src="https://www.youtube.com/embed/g5HHdoXfmLY?si=qLqpBI52py8SND6d&amp;controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                <lite-youtube class="rounded-lg border border-2 overflow-hidden w-full aspect-video" videoid="guJLfqTFfIw"></lite-youtube>
+                <lite-youtube class="rounded-lg border-2 overflow-hidden w-full aspect-video" videoid="g5HHdoXfmLY"></lite-youtube>
 
-                <a href="#contact" class="bg-[var(--yellow)] md:w-7/10 flex items-center justify-center gap-2 py-4 w-full font-semibold text-sm md:text-lg border border-2 rounded-lg hover:brightness-90 transition-all duration-300">
+                <a href="#contact" class="bg-[var(--yellow)] w-full md:w-7/10 flex items-center justify-center gap-2 py-4 font-semibold text-sm md:text-lg border-2 rounded-lg hover:brightness-90 transition-all duration-300">
                     <i class="ph-bold ph-arrow-right text-lg md:text-2xl"></i>   
                     Fale conosco
                 </a>
             </div>
         </section>
 
-        <section class="py-8 bg-[var(--yellow)] flex items-center justify-center">
+        <section class="bg-[var(--yellow)] flex items-center justify-center py-8 ">
             <div class="max-w-3xl text-[var(--blue)] flex flex-col md:flex-row items-center justify-center px-4 md:px-8 gap-4">
                 <i class="ph-fill ph-warning-circle text-5xl"></i>
                 <p class="font-bold text-[var(--blue)] text-center md:text-start">In eu tortor dictum, suscipit turpis vel, pretium lectus. Duis commodo nunc purus, nec accumsan sem sollicitudin vitae. Nulla et sem velit.</p>
             </div>
         </section>
 
-        <section id="contact" class="py-20 md:py-28 bg-[var(--light-gray)] flex items-center justify-center">
+        <section id="contact" class="bg-[var(--light-gray)] flex items-center justify-center py-20 md:py-28">
             <div class="max-w-4xl flex flex-col lg:flex-row items-center justify-center gap-8 px-4 sm:px-8">
                 <div class="flex flex-col items-center justify-center gap-4 w-full">
                     <h2 class="text-3xl lg:text-4xl max-w-xl text-center md:text-start text-[var(--blue)]">Phasellus viverra mi et enim <strong>gravida</strong> mattis turpis <strong class="text-[var(--brown)]">suspendisse auctor massa lacus.</strong></h2>
-                    <img loading="lazy" src="./assets/images/notebook.webp" class="w-5/10 lg:w-full object-contain hidden md:inline-block" alt="Mockup de notebook">
+                    <img loading="lazy" src="/assets/images/notebook.webp" class="w-5/10 lg:w-full object-contain hidden md:inline-block" alt="Mockup de notebook">
                 </div>
-                <div class="bg-white max-w-xl p-8 rounded-2xl shadow-[var(--shadow)] w-full">
+                <div class="bg-white max-w-xl w-full p-8 rounded-2xl shadow-[var(--shadow)]">
                     <form id="contact-form">
                         <div class="flex flex-col gap-1 mb-4">
                             <label for="name" class="uppercase font-semibold text-[var(--dark-gray)]">Nome completo:*</label>
-                            <input required id="name" placeholder="" type="text" class="p-2 w-full text-[var(--brown)] border border-[var(--dark-gray)] focus:border-[var(--brown)] rounded-lg outline-0 not-[&:placeholder-shown]:invalid:border-red-500 valid:border-emerald-500 transition-colors duration-300" autocomplete="name">
+                            <input 
+                                id="name" 
+                                name="name" 
+                                required 
+                                type="text" 
+                                placeholder="" 
+                                class="w-full text-[var(--brown)] p-2 border border-[var(--dark-gray)] focus:border-[var(--brown)] rounded-lg outline-0 not-[&:placeholder-shown]:invalid:border-red-500 valid:border-emerald-500 transition-colors duration-300" 
+                                autocomplete="name"
+                            />
                         </div>
                         <div class="flex flex-col gap-1 mb-4">
                             <label for="cnpj" class="uppercase font-semibold text-[var(--dark-gray)]">CNPJ:*</label>
-                            <input required placeholder="" pattern="\d{2}\.\d{3}\.\d{3}[\/]\d{4}-\d{2}" id="cnpj" type="text" class="p-2 w-full text-[var(--brown)] border border-[var(--dark-gray)] focus:border-[var(--brown)] rounded-lg outline-0 not-[&:placeholder-shown]:invalid:border-red-500 valid:border-emerald-500 transition-colors duration-300" autocomplete="off" aria-autocomplete="none">
+                            <input 
+                                id="cnpj" 
+                                name="cnpj" 
+                                required 
+                                type="text" 
+                                pattern="\d{2}\.\d{3}\.\d{3}[\/]\d{4}-\d{2}" 
+                                placeholder="" 
+                                class="w-full text-[var(--brown)] p-2 border border-[var(--dark-gray)] focus:border-[var(--brown)] rounded-lg outline-0 not-[&:placeholder-shown]:invalid:border-red-500 valid:border-emerald-500 transition-colors duration-300" 
+                                autocomplete="off" 
+                                aria-autocomplete="none"
+                            />
                         </div>
                         <div class="flex flex-col gap-1 mb-4">
                             <label for="email" class="uppercase font-semibold text-[var(--dark-gray)]">E-mail:*</label>
-                            <input required id="email" placeholder="" type="email" class="p-2 w-full text-[var(--brown)] border border-[var(--dark-gray)] focus:border-[var(--brown)] rounded-lg outline-0 not-[&:placeholder-shown]:invalid:border-red-500 valid:border-emerald-500 transition-colors duration-300" autocomplete="email">
+                            <input 
+                                id="email" 
+                                name="email" 
+                                required 
+                                type="email" 
+                                placeholder="" 
+                                class="w-full text-[var(--brown)] p-2 border border-[var(--dark-gray)] focus:border-[var(--brown)] rounded-lg outline-0 not-[&:placeholder-shown]:invalid:border-red-500 valid:border-emerald-500 transition-colors duration-300" 
+                                autocomplete="email"
+                            />
                         </div>
                         <div class="flex flex-col gap-1 mb-4">
                             <label for="tel" class="uppercase font-semibold text-[var(--dark-gray)]">Telefone:*</label>
-                            <input required id="tel" placeholder="" pattern="\(\d{2}\) \d{4}-\d{4}" type="tel" class="p-2 w-full text-[var(--brown)] border border-[var(--dark-gray)] focus:border-[var(--brown)] rounded-lg outline-0 not-[&:placeholder-shown]:invalid:border-red-500 valid:border-emerald-500 transition-colors duration-300" autocomplete=tel>
+                            <input 
+                                id="tel" 
+                                name="tel" 
+                                required 
+                                type="tel" 
+                                pattern="\(\d{2}\) \d{4}-\d{4}" 
+                                placeholder="" 
+                                class="w-full text-[var(--brown)] p-2 border border-[var(--dark-gray)] focus:border-[var(--brown)] rounded-lg outline-0 not-[&:placeholder-shown]:invalid:border-red-500 valid:border-emerald-500 transition-colors duration-300" 
+                                autocomplete=tel
+                            />
                         </div>
                         <div class="flex flex-col gap-1 mb-6">
                             <label for="organization" class="uppercase font-semibold text-[var(--dark-gray)]">Empresa:*</label>
-                            <input required id="organization" placeholder="" type="text" class="p-2 w-full text-[var(--brown)] border border-[var(--dark-gray)] focus:border-[var(--brown)] rounded-lg outline-0 not-[&:placeholder-shown]:invalid:border-red-500 valid:border-emerald-500 transition-colors duration-300" autocomplete="organization">
+                            <input 
+                                id="organization" 
+                                name="organization" 
+                                required 
+                                type="text" 
+                                placeholder="" 
+                                class="w-full text-[var(--brown)] p-2 border border-[var(--dark-gray)] focus:border-[var(--brown)] rounded-lg outline-0 not-[&:placeholder-shown]:invalid:border-red-500 valid:border-emerald-500 transition-colors duration-300" 
+                                autocomplete="organization"
+                            />
                         </div>
 
-                        <button type="submit" class="w-full bg-[var(--blue)] flex items-center justify-center gap-2 py-4 border border-2 rounded-lg hover:brightness-90 transition-all duration-300">
+                        <button type="submit" class="w-full bg-[var(--blue)] flex items-center justify-center gap-2 py-4 border-2 rounded-lg hover:brightness-90 transition-all duration-300">
                             <i class="ph-bold ph-arrow-right text-xl text-[var(--yellow)]"></i>   
                             <p class="text-white">Entre em <span class="font-bold">contato</span></p>
                         </button>
