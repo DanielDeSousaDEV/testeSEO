@@ -18,17 +18,20 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css"
+    />
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js"></script>
 
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
-    />
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css"
-    />
 </head>
   
 <body class="bg-[var(--light-gray)]">
@@ -68,7 +71,8 @@
                     </p>
                 </div>
                 
-                <iframe class="rounded-lg border border-2 overflow-hidden w-full aspect-video" src="https://www.youtube.com/embed/g5HHdoXfmLY?si=qLqpBI52py8SND6d&amp;controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <!-- <iframe class="rounded-lg border border-2 overflow-hidden w-full aspect-video" src="https://www.youtube.com/embed/g5HHdoXfmLY?si=qLqpBI52py8SND6d&amp;controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                <lite-youtube class="rounded-lg border border-2 overflow-hidden w-full aspect-video" videoid="guJLfqTFfIw"></lite-youtube>
 
                 <a href="#contact" class="bg-[var(--yellow)] md:w-7/10 flex items-center justify-center gap-2 py-4 w-full font-semibold text-sm md:text-lg border border-2 rounded-lg hover:brightness-90 transition-all duration-300">
                     <i class="ph-bold ph-arrow-right text-lg md:text-2xl"></i>   
