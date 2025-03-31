@@ -15,8 +15,8 @@ html {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
-clip-card{
-    clip-path: polygon(0% 0%, 0% 100%, 100% 60%, 100% 0%);
+.ado{
+    background-image: url('../images/casa_em_construcao.webp');
 }
 
 .spinner {
